@@ -69,65 +69,10 @@ export default function ContactPage() {
       {/* Contact Form Section */}
       <section className="py-10 bg-black">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            {/* Contact Information */}
-            <ScrollReveal direction="left">
-              <div className="bg-gray-900/50 rounded-lg border border-gray-800 p-8 h-full">
-                <h2 className="text-3xl font-semibold mb-6">Get in Touch</h2>
-                <p className="text-gray-300 mb-8">
-                  We'd love to hear from you. Fill out the form or contact us directly using the information below.
-                </p>
-
-                <div className="space-y-6">
-                  <div className="flex items-start">
-                    <div className="mr-4 mt-1">
-                      <Mail className="h-6 w-6 text-purple-400" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-medium mb-1">Email</h3>
-                      <p className="text-gray-300">info@vectors.build</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="mr-4 mt-1">
-                      <Phone className="h-6 w-6 text-purple-400" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-medium mb-1">Phone</h3>
-                      <p className="text-gray-300">+1 (555) 123-4567</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start">
-                    <div className="mr-4 mt-1">
-                      <MapPin className="h-6 w-6 text-purple-400" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-medium mb-1">Location</h3>
-                      <p className="text-gray-300">
-                        123 AI Avenue
-                        <br />
-                        San Francisco, CA 94103
-                        <br />
-                        United States
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-12 relative">
-                  <VectorShape size={120} color="#9333ea" className="absolute -bottom-16 -right-16 opacity-30" />
-                  <VectorShape size={80} color="#4f46e5" className="absolute -top-16 -left-16 opacity-30" />
-                </div>
-              </div>
-            </ScrollReveal>
-
+          <div className="max-w-3xl mx-auto">
             {/* Contact Form */}
             <ScrollReveal direction="right">
-              <div className="bg-gray-900/50 rounded-lg border border-gray-800 p-8">
-                <h2 className="text-3xl font-semibold mb-6">Send a Message</h2>
-
+              <form onSubmit={handleSubmit} className="space-y-6">
                 {isSubmitted ? (
                   <div className="flex flex-col items-center justify-center py-12">
                     <div className="w-16 h-16 rounded-full bg-purple-900/50 flex items-center justify-center mb-6">
@@ -140,7 +85,7 @@ export default function ContactPage() {
                     <AnimatedButton onClick={() => setIsSubmitted(false)}>Send Another Message</AnimatedButton>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
+                  <>
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-1">
                         Name
@@ -241,9 +186,9 @@ export default function ContactPage() {
                         )}
                       </AnimatedButton>
                     </div>
-                  </form>
+                  </>
                 )}
-              </div>
+              </form>
             </ScrollReveal>
           </div>
         </div>

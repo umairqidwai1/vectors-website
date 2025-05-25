@@ -36,6 +36,7 @@ export default function Navigation() {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
+          <img src="/logo.png" alt="Vectors Logo" className="h-10 w-10 mr-3 rounded" />
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -66,9 +67,11 @@ export default function Navigation() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <Button className="glow-effect bg-gradient-to-r from-purple-700 to-violet-600 hover:from-purple-600 hover:to-violet-500 transition-all duration-300 transform hover:scale-105">
-              Get Started
-            </Button>
+            <Link href="/contact">
+              <Button className="glow-effect bg-gradient-to-r from-purple-700 to-violet-600 hover:from-purple-600 hover:to-violet-500 transition-all duration-300 transform hover:scale-105">
+                Get Started
+              </Button>
+            </Link>
           </motion.div>
         </nav>
 
@@ -112,9 +115,11 @@ export default function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.5 }}
               >
-                <Button className="w-full bg-gradient-to-r from-purple-700 to-violet-600 hover:from-purple-600 hover:to-violet-500">
-                  Get Started
-                </Button>
+                <Link href="/contact">
+                  <Button className="w-full bg-gradient-to-r from-purple-700 to-violet-600 hover:from-purple-600 hover:to-violet-500">
+                    Get Started
+                  </Button>
+                </Link>
               </motion.div>
             </div>
           </motion.div>

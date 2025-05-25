@@ -88,6 +88,19 @@ const agents = [
     ],
     icon: "/placeholder.svg?height=80&width=80",
   },
+  {
+    id: "receptionist-agent",
+    name: "Receptionist Agent",
+    description: "Answer calls as a receptionist, book meetings, and check availability for your team.",
+    capabilities: [
+      "Answer and route incoming calls",
+      "Book meetings based on calendar availability",
+      "Check and manage team schedules",
+      "Send meeting invites and confirmations",
+      "Provide basic company information to callers"
+    ],
+    icon: "/placeholder.svg?height=80&width=80",
+  },
 ]
 
 export default function AgentsPage() {

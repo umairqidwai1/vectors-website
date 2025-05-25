@@ -21,6 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
+      </head>
       <body className={`${inter.className} bg-black text-white antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="dark">
           <div className="relative min-h-screen flex flex-col">

@@ -33,6 +33,15 @@ export default function Home() {
           className="container mx-auto px-4 py-20 flex flex-col items-center text-center z-10"
         >
           <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-8 flex justify-center"
+          >
+            <img src="/logo.png" alt="Vectors Logo" className="h-20 w-20 rounded-full shadow-lg" />
+          </motion.div>
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -68,7 +77,9 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <AnimatedButton size="lg">Get Started Free</AnimatedButton>
+            <Link href="/contact">
+              <AnimatedButton size="lg">Get Started Free</AnimatedButton>
+            </Link>
             <Link href="/demo">
               <AnimatedButton variant="outline" size="lg">
                 See Demo <ArrowRight className="ml-2 h-4 w-4" />
@@ -201,7 +212,9 @@ export default function Home() {
 
           <ScrollReveal delay={0.6}>
             <div className="mt-16 text-center">
-              <AnimatedButton size="lg">Start Building Now</AnimatedButton>
+              <Link href="/contact">
+                <AnimatedButton size="lg">Start Building Now</AnimatedButton>
+              </Link>
             </div>
           </ScrollReveal>
         </div>
@@ -278,7 +291,9 @@ export default function Home() {
                 Join thousands of businesses already using Vectors to automate workflows and boost productivity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <AnimatedButton size="lg">Get Started Free</AnimatedButton>
+                <Link href="/contact">
+                  <AnimatedButton size="lg">Get Started Free</AnimatedButton>
+                </Link>
                 <Link href="/demo">
                   <AnimatedButton variant="outline" size="lg">
                     Schedule a Demo
