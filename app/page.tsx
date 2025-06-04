@@ -1,9 +1,9 @@
+"use client"
+
 export const metadata = {
   title: "Vectors | AI Automation Platform",
   description: "Supercharge your workflows with AI agents tailored to your business.",
 }
-
-"use client"
 
 import { useRef } from "react"
 import Link from "next/link"

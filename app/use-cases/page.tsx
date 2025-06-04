@@ -1,9 +1,9 @@
+"use client"
+
 export const metadata = {
   title: 'Use Cases | Vectors AI',
   description: 'Explore real-world use cases of how Vectors AI agents can transform operations across various industries.',
 };
-
-"use client"
 
 import Link from "next/link"
 import { motion } from "framer-motion"
