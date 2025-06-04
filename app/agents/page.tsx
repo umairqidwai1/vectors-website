@@ -1,10 +1,5 @@
 "use client"
 
-export const metadata = {
-  title: 'AI Agents',
-  description: 'Discover how Vectors AI agents can automate your workflows and scale your operations.',
-};
-
 import { useState } from "react"
 import Link from "next/link"
 import { motion } from "framer-motion"
