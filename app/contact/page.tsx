@@ -1,3 +1,8 @@
+export const metadata = {
+  title: 'Contact Us | Vectors AI',
+  description: 'Reach out to the Vectors team with questions, feedback, or partnership inquiries. We’re here to help.',
+};
+
 "use client"
 
 import type React from "react"
