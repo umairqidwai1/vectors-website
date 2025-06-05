@@ -21,7 +21,7 @@ const agents = [
       "Sentiment analysis",
       "Escalation to human agents when needed",
     ],
-    icon: "/placeholder.svg?height=80&width=80",
+    icon: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=160&h=160&q=80",
   },
   {
     id: "data-analyst",
@@ -34,7 +34,7 @@ const agents = [
       "Visualization generation",
       "Anomaly detection",
     ],
-    icon: "/placeholder.svg?height=80&width=80",
+    icon: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=160&h=160&q=80",
   },
   {
     id: "content-creator",
@@ -47,7 +47,7 @@ const agents = [
       "Content calendar management",
       "Performance analytics",
     ],
-    icon: "/placeholder.svg?height=80&width=80",
+    icon: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=160&h=160&q=80",
   },
   {
     id: "sales-assistant",
@@ -60,7 +60,7 @@ const agents = [
       "CRM integration",
       "Sales pipeline analytics",
     ],
-    icon: "/placeholder.svg?height=80&width=80",
+    icon: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=160&h=160&q=80",
   },
   {
     id: "research-assistant",
@@ -73,7 +73,7 @@ const agents = [
       "Trend analysis",
       "Report generation",
     ],
-    icon: "/placeholder.svg?height=80&width=80",
+    icon: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=160&h=160&q=80",
   },
   {
     id: "process-automation",
@@ -86,7 +86,7 @@ const agents = [
       "Approval management",
       "Error handling and reporting",
     ],
-    icon: "/placeholder.svg?height=80&width=80",
+    icon: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=160&h=160&q=80",
   },
   {
     id: "receptionist-agent",
@@ -99,7 +99,7 @@ const agents = [
       "Send meeting invites and confirmations",
       "Provide basic company information to callers"
     ],
-    icon: "/placeholder.svg?height=80&width=80",
+    icon: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=160&h=160&q=80",
   },
 ]
 
@@ -192,11 +192,10 @@ export default function AgentsPage() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <AnimatedButton>Deploy This Agent</AnimatedButton>
-                  <Link href={`/agents/${selectedAgent.id}`}>
-                    <AnimatedButton variant="outline">
-                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                    </AnimatedButton>
+                  <Link href="https://calendly.com/agents-vectors/30min" target="_blank" rel="noopener noreferrer">
+                    <span className="text-purple-400 flex items-center hover:text-purple-300 transition-colors">
+                      Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                    </span>
                   </Link>
                 </div>
               </div>
@@ -223,9 +222,11 @@ export default function AgentsPage() {
                     workflows.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <AnimatedButton>Schedule a Consultation</AnimatedButton>
                     <Link href="/contact">
-                      <AnimatedButton variant="outline">Contact Sales</AnimatedButton>
+                      <AnimatedButton>Contact Us</AnimatedButton>
+                    </Link>
+                    <Link href="https://calendly.com/agents-vectors/30min" target="_blank" rel="noopener noreferrer">
+                      <AnimatedButton variant="outline">Schedule a Demo</AnimatedButton>
                     </Link>
                   </div>
                 </div>

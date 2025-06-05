@@ -26,32 +26,12 @@ export default function Home() {
       {/* Hero Section */}
       <section
         ref={targetRef}
-        className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden vector-bg"
+        className="relative min-h-screen flex items-center justify-center pt-12 overflow-hidden vector-bg"
       >
         <motion.div
           style={{ opacity, scale }}
           className="container mx-auto px-4 py-20 flex flex-col items-center text-center z-10"
         >
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-8 flex justify-center"
-          >
-            <img src="/logo.png" alt="Vectors Logo" className="h-20 w-20 rounded-full shadow-lg" />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="mb-4 inline-block"
-          >
-            <span className="px-4 py-1.5 rounded-full bg-purple-900/30 text-purple-300 text-sm font-medium border border-purple-800">
-              Introducing Vectors
-            </span>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -88,7 +68,7 @@ export default function Home() {
             <Link href="/contact">
               <AnimatedButton size="lg">Get Started with Vectors AI</AnimatedButton>
             </Link>
-            <Link href="/demo">
+            <Link href="https://calendly.com/agents-vectors/30min" target="_blank" rel="noopener noreferrer">
               <AnimatedButton variant="outline" size="lg">
                 See Demo <ArrowRight className="ml-2 h-4 w-4" />
               </AnimatedButton>
@@ -257,18 +237,18 @@ export default function Home() {
                 title: "Customer Support",
                 description:
                   "Automate responses to common customer inquiries and route complex issues to human agents.",
-                image: "/placeholder.svg?height=200&width=400",
+                image: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=800&h=400&q=80",
               },
               {
                 title: "Data Analysis",
                 description: "Extract insights from your data automatically and generate comprehensive reports.",
-                image: "/placeholder.svg?height=200&width=400",
+                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&h=400&q=80",
               },
               {
                 title: "Content Creation",
                 description:
                   "Generate blog posts, social media content, and marketing copy tailored to your brand voice.",
-                image: "/placeholder.svg?height=200&width=400",
+                image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=800&h=400&q=80",
               },
             ].map((useCase, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
@@ -283,7 +263,7 @@ export default function Home() {
                   <div className="p-6">
                     <h3 className="text-xl font-semibold mb-3">{useCase.title}</h3>
                     <p className="text-gray-400 mb-4">{useCase.description}</p>
-                    <Link href={`/use-cases/${useCase.title.toLowerCase().replace(/\s+/g, "-")}`}>
+                    <Link href="https://calendly.com/agents-vectors/30min" target="_blank" rel="noopener noreferrer">
                       <span className="text-purple-400 flex items-center hover:text-purple-300 transition-colors">
                         Learn more <ArrowRight className="ml-2 h-4 w-4" />
                       </span>
@@ -307,9 +287,9 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href="/contact">
-                  <AnimatedButton size="lg">Get Started Free</AnimatedButton>
+                  <AnimatedButton size="lg">Contact Us</AnimatedButton>
                 </Link>
-                <Link href="/demo">
+                <Link href="https://calendly.com/agents-vectors/30min" target="_blank" rel="noopener noreferrer">
                   <AnimatedButton variant="outline" size="lg">
                     Schedule a Demo
                   </AnimatedButton>

@@ -44,7 +44,7 @@ export default function Footer() {
               <Link href="https://github.com" className="text-gray-400 hover:text-purple-500 transition-colors">
                 <Github size={20} />
               </Link>
-              <Link href="mailto:info@vectors.build" className="text-gray-400 hover:text-purple-500 transition-colors">
+              <Link href="mailto:agents@vectors.build" className="text-gray-400 hover:text-purple-500 transition-colors">
                 <Mail size={20} />
               </Link>
             </div>
@@ -69,16 +69,6 @@ export default function Footer() {
                   Agents
                 </Link>
               </li>
-              <li>
-                <Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">
-                  Pricing
-                </Link>
-              </li>
-              <li>
-                <Link href="/roadmap" className="text-gray-400 hover:text-white transition-colors">
-                  Roadmap
-                </Link>
-              </li>
             </ul>
           </motion.div>
 
@@ -92,23 +82,8 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/docs" className="text-gray-400 hover:text-white transition-colors">
-                  Documentation
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
                 <Link href="/faq" className="text-gray-400 hover:text-white transition-colors">
                   FAQ
-                </Link>
-              </li>
-              <li>
-                <Link href="/community" className="text-gray-400 hover:text-white transition-colors">
-                  Community
                 </Link>
               </li>
             </ul>
@@ -123,21 +98,6 @@ export default function Footer() {
           >
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
-              <li>
-                <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/team" className="text-gray-400 hover:text-white transition-colors">
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link href="/careers" className="text-gray-400 hover:text-white transition-colors">
-                  Careers
-                </Link>
-              </li>
               <li>
                 <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
                   Contact

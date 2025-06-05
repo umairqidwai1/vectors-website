@@ -11,7 +11,7 @@ const useCases = [
   {
     title: "Customer Support",
     description: "Automate responses to common customer inquiries and route complex issues to human agents.",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1200&h=600&q=80",
     benefits: [
       "Reduce response time by up to 80%",
       "Handle multiple inquiries simultaneously",
@@ -22,7 +22,7 @@ const useCases = [
   {
     title: "Data Analysis",
     description: "Extract insights from your data automatically and generate comprehensive reports.",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&h=600&q=80",
     benefits: [
       "Analyze large datasets in minutes",
       "Identify trends and patterns automatically",
@@ -33,7 +33,7 @@ const useCases = [
   {
     title: "Content Creation",
     description: "Generate blog posts, social media content, and marketing copy tailored to your brand voice.",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&h=600&q=80",
     benefits: [
       "Create content at scale",
       "Maintain consistent brand messaging",
@@ -44,7 +44,7 @@ const useCases = [
   {
     title: "Sales Automation",
     description: "Qualify leads, schedule meetings, and follow up with prospects automatically.",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&h=600&q=80",
     benefits: [
       "Qualify leads 24/7",
       "Personalized follow-ups at scale",
@@ -55,7 +55,7 @@ const useCases = [
   {
     title: "Research Assistant",
     description: "Gather information, summarize findings, and generate reports on any topic.",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&h=600&q=80",
     benefits: [
       "Comprehensive research in minutes",
       "Summarize lengthy documents",
@@ -66,7 +66,7 @@ const useCases = [
   {
     title: "Process Automation",
     description: "Automate repetitive tasks and workflows across your organization.",
-    image: "/placeholder.svg?height=300&width=600",
+    image: "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=600&q=80",
     benefits: [
       "Reduce manual data entry",
       "Automate approval workflows",
@@ -117,7 +117,7 @@ export default function UseCasesPage() {
                   </div>
                   <div className="p-8">
                     <h2 className="text-2xl font-semibold mb-4">{useCase.title}</h2>
-                    <p className="text-gray-300 mb-6">{useCase.description}</p>
+                    <p className="text-gray-400 mb-4">{useCase.description}</p>
 
                     <h3 className="text-lg font-medium mb-3 text-purple-400">Key Benefits</h3>
                     <ul className="space-y-2 mb-6">
@@ -129,10 +129,10 @@ export default function UseCasesPage() {
                       ))}
                     </ul>
 
-                    <Link href={`/use-cases/${useCase.title.toLowerCase().replace(/\s+/g, "-")}`}>
-                      <AnimatedButton variant="outline">
-                        Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                      </AnimatedButton>
+                    <Link href="https://calendly.com/agents-vectors/30min" target="_blank" rel="noopener noreferrer">
+                      <span className="text-purple-400 flex items-center hover:text-purple-300 transition-colors">
+                        Learn more <ArrowRight className="ml-2 h-4 w-4" />
+                      </span>
                     </Link>
                   </div>
                 </div>
@@ -148,10 +148,12 @@ export default function UseCasesPage() {
                 Join thousands of businesses already using Vectors to automate workflows and boost productivity.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <AnimatedButton size="lg">Get Started Free</AnimatedButton>
                 <Link href="/contact">
+                  <AnimatedButton size="lg">Contact Us</AnimatedButton>
+                </Link>
+                <Link href="https://calendly.com/agents-vectors/30min" target="_blank" rel="noopener noreferrer">
                   <AnimatedButton variant="outline" size="lg">
-                    Contact Sales
+                    Schedule a Demo
                   </AnimatedButton>
                 </Link>
               </div>

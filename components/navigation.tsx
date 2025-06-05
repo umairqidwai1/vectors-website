@@ -67,9 +67,9 @@ export default function Navigation() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
-            <Link href="/contact">
+            <Link href="https://calendly.com/agents-vectors/30min" target="_blank" rel="noopener noreferrer">
               <Button className="glow-effect bg-gradient-to-r from-purple-700 to-violet-600 hover:from-purple-600 hover:to-violet-500 transition-all duration-300 transform hover:scale-105">
-                Get Started
+                Schedule a Demo
               </Button>
             </Link>
           </motion.div>

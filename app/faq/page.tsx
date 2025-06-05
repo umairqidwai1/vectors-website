@@ -145,8 +145,8 @@ export default function FAQPage() {
                 <Link href="/contact">
                   <AnimatedButton>Contact Us</AnimatedButton>
                 </Link>
-                <Link href="/docs">
-                  <AnimatedButton variant="outline">View Documentation</AnimatedButton>
+                <Link href="https://calendly.com/agents-vectors/30min" target="_blank" rel="noopener noreferrer">
+                  <AnimatedButton variant="outline">Schedule a Demo</AnimatedButton>
                 </Link>
               </div>
             </div>
