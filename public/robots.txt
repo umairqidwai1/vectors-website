@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://vectors.build
+
+# Sitemaps
+Sitemap: https://vectors.build/sitemap.xml
