@@ -58,7 +58,7 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl"
           >
-            <span className="gradient-text">AI Agents</span> That Adapt To Your Business Needs
+            <span className="gradient-text">AI Automation Agents</span> for Your Business Workflows
           </motion.h1>
 
           <motion.p
@@ -67,9 +67,20 @@ export default function Home() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-300 mb-10 max-w-2xl"
           >
-            Automate complex workflows with intelligent AI agents that learn and evolve with your business. Vectors
-            makes AI automation accessible to everyone.
+            Vectors is an AI automation platform that helps businesses deploy intelligent agents to streamline workflows, reduce manual tasks, and scale operations with ease.
           </motion.p>
+
+          {/* SEO Description */}
+          <p className="sr-only">
+            Vectors AI is a cutting-edge platform for AI automation, enabling businesses to deploy AI agents and AI employees tailored to their workflows. 
+            With Vectors Build, you can create smart AI assistants that automate repetitive tasks, optimize operations, and handle customer interactions. 
+            Our solutions include Vectors Agents, Vectors AI, Vectors Automations, and intelligent Vectors Workflows designed to scale. 
+            Whether you're looking for AI-powered workflows, AI chatbots, virtual AI employees, or autonomous AI operations, Vectors delivers. 
+            Use Vectors to manage customer service, internal processes, lead generation, support tickets, content automation, and business intelligence. 
+            Vectors AI Automations are ideal for startups, agencies, enterprises, and solo founders seeking scalable automation solutions. 
+            Popular terms include vectors.build, Vectors AI Automations, Vectors AI Agents, Vectors Automation Platform, AI Workflows, Workflow Automation with AI, AI-powered business tools, scalable AI systems, and next-gen AI employees. 
+            Join the automation revolution with Vectors and transform how your business operates with intelligent agents and no-code AI workflows.
+          </p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -226,7 +237,7 @@ export default function Home() {
           <ScrollReveal>
             <div className="flex flex-col md:flex-row justify-between items-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold">
-                <span className="gradient-text">Popular Use Cases</span>
+                <span className="gradient-text">AI Automation Use Cases</span>
               </h2>
               <Link href="/use-cases">
                 <AnimatedButton variant="outline" className="mt-4 md:mt-0">
@@ -286,7 +297,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <ScrollReveal>
             <div className="max-w-4xl mx-auto p-8 md:p-12 rounded-2xl bg-gradient-to-br from-purple-900/40 to-violet-900/40 border border-purple-800/50 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business with AI?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">  Ready to Automate Your Business with Vectors AI?</h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                 Join thousands of businesses already using Vectors to automate workflows and boost productivity.
               </p>
