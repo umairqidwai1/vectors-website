@@ -10,10 +10,10 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Vectors | AI Automation Platform",
-    template: "%s | Vectors",
+  default: "Vectors AI | Intelligent Business Agents",
+  template: "%s | Vectors AI",
   },
-  description: "Automate your workflows with AI agents that adapt to your business needs.",
+  description: "Vectors AI builds intelligent AI agents that automate workflows, streamline operations, and scale with your business. Discover the power of Vectors AI automation.",
   generator: "v0.dev",
   metadataBase: new URL("https://vectors.build"),
   openGraph: {
