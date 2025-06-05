@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   generator: "v0.dev",
   metadataBase: new URL("https://vectors.build"),
   openGraph: {
-    title: "Vectors | AI Automation Platform",
+    title: "Vectors AI | Intelligent Business Agents",
     description: "Automate your workflows with AI agents that adapt to your business needs.",
     url: "https://vectors.build",
     siteName: "Vectors",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vectors | AI Automation Platform",
+    title: "Vectors AI | Intelligent Business Agents",
     description: "Automate your workflows with AI agents that adapt to your business needs.",
     images: ["/opengraph-image.png"],
   },
